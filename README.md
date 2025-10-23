@@ -152,5 +152,3 @@ This two-phase project helped me:
 * Learn JavaScript DOM manipulation for dynamic webpages.
 
 ---
-
-Would you like me to include example **CSS styling** (dark theme + button hover) inside this README too? It would make it easier for others to replicate your design.
