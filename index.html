@@ -39,6 +39,35 @@
         .anime {
             margin-bottom: 30px;
         }
+
+        /* Button styling */
+        button {
+            display: block;
+            margin: 40px auto;
+            padding: 10px 20px;
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff4500;
+        }
+
+        /* Player section styling */
+        .player-section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #1f1f1f;
+            border-radius: 10px;
+        }
+
+        .player-section h2 {
+            color: #32cd32;
+        }
     </style>
 </head>
 <body>
@@ -58,9 +87,44 @@
 
     <div class="anime">
         <h2>One Piece</h2>
-        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ37XqucvR8sG2MvuiYzN0O-qPAsOtpg2ZBWKHqH-_3qHOxgx5L0IX3q2QkeeSEmMNMPtTDdLYHpvehxrYDcQxEmw72paAQiNHtS04P4vPJ" alt="Fullmetal Alchemist Poster">
-        <p>One Piece is an epic anime about Monkey D. Luffy's quest to become King of the Pirates, filled with friendship, battles, and the pursuit of dreams..</p>
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ37XqucvR8sG2MvuiYzN0O-qPAsOtpg2ZBWKHqH-_3qHOxgx5L0IX3q2QkeeSEmMNMPtTDdLYHpvehxrYDcQxEmw72paAQiNHtS04P4vPJ" alt="One Piece Poster">
+        <p>One Piece is an epic anime about Monkey D. Luffy's quest to become King of the Pirates, filled with friendship, battles, and the pursuit of dreams.</p>
     </div>
 
+    <!-- Step 2: Interactive Button -->
+    <button onclick="showFootballPlayer()">Show My Top Football Player</button>
+
+    <!-- Container for the new section -->
+    <div id="player-container"></div>
+
+    <script>
+        // Function that adds a new section dynamically
+        function showFootballPlayer() {
+            const container = document.getElementById('player-container');
+
+            // Prevent multiple sections
+            if (document.querySelector('.player-section')) {
+                alert('You already added your favorite football player!');
+                return;
+            }
+
+            // Create the new section
+            const section = document.createElement('div');
+            section.className = 'player-section';
+
+            // Add heading
+            const heading = document.createElement('h2');
+            heading.textContent = 'My Favorite Football Player: Cristiano Ronaldo';
+
+            // Add paragraph
+            const paragraph = document.createElement('p');
+            paragraph.textContent = 'Cristiano Ronaldo is one of the greatest footballers ever. Known for his unmatched work ethic, goal-scoring ability, and leadership, he continues to inspire millions around the world.';
+
+            // Append elements
+            section.appendChild(heading);
+            section.appendChild(paragraph);
+            container.appendChild(section);
+        }
+    </script>
 </body>
 </html>
