@@ -1,12 +1,3 @@
-Absolutely ✅ — here’s a **detailed, professional `README.md`** tailored for your project **“Favorite Anime List”**, covering all 7 phases you’ve completed so far.
-
-It explains the project purpose, setup steps, technology stack, Git branching workflow, and contribution details — perfect for your GitHub repository.
-
----
-
-## 📘 README.md — Favorite Anime List
-
-```markdown
 # 🎨 Favorite Anime List
 
 A step-by-step web development learning project that evolves from **HTML basics** to a **Next.js + TypeScript app**.  
