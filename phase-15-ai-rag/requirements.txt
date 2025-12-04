@@ -1,0 +1,4 @@
+sentence-transformers
+supabase
+psycopg2
+python-dotenv
